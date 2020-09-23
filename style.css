@@ -37,16 +37,16 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*tohle mi z nějakého důvodu nefunguje */
+  justify-content: center;
+  align-items: center;
 }
 .zbozi {
   width: 670px;
   height: 440px;
   display: flex;
-  flex-direction: row;
-  /*tohle mi z nějakého důvodu nefunguje
-  justify-content: center;
-  align-content: center;
-  */
 }
 
 .vizual,
@@ -61,6 +61,7 @@ body {
 .vizual {
   display: flex;
   flex-direction: column;
+  color: white;
   background-image: linear-gradient(#06d7c1, #50cc49);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -75,15 +76,31 @@ body {
 
 .bota {
   height: 280px;
+  position: relative;
+  left: -40%;
+  bottom: -3%;
 }
 
 .cenovka {
+  position: relative;
+  left: 3%;
+  bottom: 15%;
+  text-align: right;
+  line-height: 1.5;
 }
 
+.cena {
+  font-size: 26px;
+  font-weight: 500;
+}
+.zaruka {
+  font-size: 13px;
+  font-weight: 400;
+}
 .detaily {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-evenly;
   background-color: purple; /*potom odstranit*/
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -97,21 +114,32 @@ h1 {
 }
 
 .produkt {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 400;
   font-weight: 500;
   margin: 10px 0;
   color: #959595;
 }
 
+.popis {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #06d7c1;
+}
+
 .parametr {
   font-size: 16px;
   text-transform: uppercase;
+  padding-top: 30px;
+  margin: 0;
 }
 
 ul.velikosti {
   display: block;
   padding: 0;
-  margin: 30px 8px;
+  margin: 0px 8px;
 }
 
 ul {
@@ -119,7 +147,7 @@ ul {
 }
 
 li {
-  font-size: 14px;
+  font-size: 15px;
   list-style-type: none;
   display: inline-block;
   width: 38px;
