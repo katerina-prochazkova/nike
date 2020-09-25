@@ -29,17 +29,15 @@ body {
 /* ----- zde zacni psat vlastni css ----- */
 
 html {
-  height: 100vh;
+  height: 100vh; /* je tohle ok? nemá tam být min-height? pak se to ale zarovná nahoru a nejde mi to přerovnat na střed... */
 }
 
 body {
   font-family: 'Rubik', sans-serif;
   margin: 0;
   background-color: #f5f5f5;
-  height: 100%;
+  min-height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  /*tohle mi z nějakého důvodu nefunguje */
   justify-content: center;
   align-items: center;
 }
@@ -55,7 +53,6 @@ body {
   margin: 0;
   width: 50%;
   height: 100%;
-  display: inline-block;
 }
 
 .vizual {
@@ -122,8 +119,7 @@ h1 {
 
 .popis {
   font-size: 14px;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   padding-bottom: 30px;
   border-bottom: 1px solid #06d7c1;
 }
@@ -132,8 +128,7 @@ h1 {
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 30px;
+  margin: 30px 0 0 0;
 }
 
 ul {
@@ -148,7 +143,6 @@ ul {
 li {
   font-size: 15px;
   list-style-type: none;
-  display: inline-block;
   width: auto;
   margin: 0;
   padding: 4px;
@@ -162,7 +156,6 @@ li {
 }
 
 .akce {
-  display: block;
   padding: 0;
   margin: 20px 0;
 }
