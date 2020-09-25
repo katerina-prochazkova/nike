@@ -100,8 +100,8 @@ body {
 .detaily {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: purple; /*potom odstranit*/
+  justify-content: left;
+  background-color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -114,10 +114,9 @@ h1 {
 }
 
 .produkt {
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 400;
-  font-weight: 500;
-  margin: 10px 0;
+  margin-top: 10px;
   color: #959595;
 }
 
@@ -130,48 +129,55 @@ h1 {
 }
 
 .parametr {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 500;
   text-transform: uppercase;
-  padding-top: 30px;
   margin: 0;
-}
-
-ul.velikosti {
-  display: block;
-  padding: 0;
-  margin: 0px 8px;
+  margin-top: 30px;
 }
 
 ul {
+  margin: 15px 30px 50px 3px;
   padding-inline-start: 0;
+  padding-bottom: 45 px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 li {
   font-size: 15px;
   list-style-type: none;
   display: inline-block;
-  width: 38px;
+  width: auto;
   margin: 0;
-  padding: 0;
+  padding: 4px;
 }
 
 .vybrana {
-  color: rgb(201, 72, 33);
+  color: #f15f42;
+  font-weight: 500;
+  border: 1px solid #f15f42;
+  border-radius: 50%;
 }
 
 .akce {
   display: block;
   padding: 0;
-  margin: 30px 0 0 0;
+  margin: 20px 0;
 }
 
-a {
+.tlacitko {
   text-decoration: none;
   text-transform: uppercase;
-  height: 130px;
   color: white;
-  background-color: rgb(201, 72, 33);
-  padding: 10px 30px;
-  margin: 0;
-  border-radius: 5px;
+  background-color: #f15f42;
+  box-shadow: 1px 1px 3px 0px grey;
+  padding: 15px 30px;
+  border-radius: 6px;
+}
+
+a:hover,
+a:focus {
+  background-color: #fa5332;
 }
